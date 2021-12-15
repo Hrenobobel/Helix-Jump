@@ -20,6 +20,8 @@ namespace Assets.Scripts
         {
             if (!other.TryGetComponent(out Player player)) return;
 
+            player.Scores += 20;
+
             Instantiate(PlatformParticle, transform);
 
             _rigidbodymassive = GetComponentsInChildren<Rigidbody>();

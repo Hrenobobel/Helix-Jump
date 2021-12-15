@@ -674,13 +674,14 @@ GameObject:
   - component: {fileID: 294119017}
   - component: {fileID: 294119019}
   - component: {fileID: 294119018}
+  - component: {fileID: 294119020}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &294119017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -742,6 +743,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294119016}
   m_CullTransparentMesh: 1
+--- !u!114 &294119020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294119016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5059bcdc5abf8740bcd43395da8bcaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 294119018}
+  player: {fileID: 477318085}
 --- !u!1 &297876891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,6 +3028,7 @@ GameObject:
   - component: {fileID: 1697698975}
   - component: {fileID: 1697698977}
   - component: {fileID: 1697698976}
+  - component: {fileID: 1697698978}
   m_Layer: 5
   m_Name: Record Text
   m_TagString: Untagged
@@ -3083,6 +3099,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697698974}
   m_CullTransparentMesh: 1
+--- !u!114 &1697698978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697698974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a072f32dff7df340a1bded6e04bfdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 1697698976}
+  player: {fileID: 477318085}
 --- !u!1 &1761335621
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3358,7 @@ GameObject:
   - component: {fileID: 1835813785}
   - component: {fileID: 1835813787}
   - component: {fileID: 1835813786}
+  - component: {fileID: 1835813788}
   m_Layer: 5
   m_Name: Record Text
   m_TagString: Untagged
@@ -3398,6 +3429,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835813784}
   m_CullTransparentMesh: 1
+--- !u!114 &1835813788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835813784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a072f32dff7df340a1bded6e04bfdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 1835813786}
+  player: {fileID: 477318085}
 --- !u!1 &2118227674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,13 +3454,14 @@ GameObject:
   - component: {fileID: 2118227675}
   - component: {fileID: 2118227677}
   - component: {fileID: 2118227676}
+  - component: {fileID: 2118227678}
   m_Layer: 0
   m_Name: Best Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2118227675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3477,3 +3523,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118227674}
   m_CullTransparentMesh: 1
+--- !u!114 &2118227678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118227674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a072f32dff7df340a1bded6e04bfdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 2118227676}
+  player: {fileID: 477318085}

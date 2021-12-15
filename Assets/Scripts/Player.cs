@@ -35,6 +35,9 @@ public class Player : MonoBehaviour
 
         Game.OnPlayerReachedFinish(); 
         RigidBody.velocity = Vector3.zero;
+
+        if (Scores > Record)
+            Record = Scores;
     }
 
     public void Bounce()
@@ -53,6 +56,29 @@ public class Player : MonoBehaviour
         RigidBody.velocity = Vector3.zero;
 
         Renderer SectorRenderer = GetComponent<Renderer>();
-        SectorRenderer.sharedMaterial = BadMaterial;        
+        SectorRenderer.sharedMaterial = BadMaterial;
+
+        Scores = 0;
     }
+    public int Scores
+    {
+        get => PlayerPrefs.GetInt(ScoresKey, 0);
+        set
+        {
+            PlayerPrefs.SetInt(ScoresKey, value);
+            PlayerPrefs.Save();
+        }
+    }
+    private const string ScoresKey = "Scores";
+
+    public int Record
+    {
+        get => PlayerPrefs.GetInt(RecordKey, 0);
+        set
+        {
+            PlayerPrefs.SetInt(RecordKey, value);
+            PlayerPrefs.Save();
+        }
+    }
+    private const string RecordKey = "Record";
 }
