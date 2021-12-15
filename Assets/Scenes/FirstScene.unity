@@ -1035,7 +1035,7 @@ MonoBehaviour:
   RigidBody: {fileID: 477318084}
   Game: {fileID: 765353273}
   CurrentPlatform: {fileID: 0}
-  BadMaterial: {fileID: 2100000, guid: 64405b1f3411d4f428e9902ff2668e69, type: 2}
+  DissolveMaterial: {fileID: 2100000, guid: 64405b1f3411d4f428e9902ff2668e69, type: 2}
   LoseParticle: {fileID: 6493087441681242183, guid: 8de4c21471f579d438c3d2d077f26f1b, type: 3}
   WinParticle: {fileID: 1991304109626694830, guid: 187c60c82dabef34691b8898615452fe, type: 3}
   FinishPlatform: {fileID: 732437962}
