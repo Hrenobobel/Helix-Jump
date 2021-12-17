@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public Rigidbody RigidBody;
     public Game Game;
     public Platform CurrentPlatform;
-    public Material BadMaterial;
+    public Material DissolveMaterial;
 
     public GameObject LoseParticle;
     public GameObject WinParticle;
@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         RigidBody.velocity = Vector3.zero;
 
         Renderer SectorRenderer = GetComponent<Renderer>();
-        SectorRenderer.sharedMaterial = BadMaterial;
+        SectorRenderer.sharedMaterial = DissolveMaterial;
 
         Scores = 0;
     }

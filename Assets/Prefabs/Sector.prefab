@@ -110,4 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsGood: 1
   GoodMaterial: {fileID: 2100000, guid: 5d851a76045690242ab353fe6a7e2a45, type: 2}
-  BadMaterial: {fileID: 2100000, guid: 64405b1f3411d4f428e9902ff2668e69, type: 2}
+  BadMaterial: {fileID: 2100000, guid: 45d7fe6486fc10648a159c8fa1b4ad0a, type: 2}
